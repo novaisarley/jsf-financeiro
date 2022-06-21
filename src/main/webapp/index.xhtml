@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 
 	<title>Financeiro</title>
-</head>
+</h:head>
 
-<body>
+<h:body>
+	<h:form>
+		<h:messages showDetail="true" showSummary="true"
+			errorStyle="color: red" infoStyle="color: green"
+			warnStyle="color: orange" fatalStyle="color: gray" />
+		<h:outputLabel value="Nome:" />
+		<h:inputText value="#{indexBean.nome}" />
+		<h:commandButton value="Cadastrar" action="#{indexBean.cadastrar}" />
+	</h:form>
 
-</body>
+
+</h:body>
 </html>

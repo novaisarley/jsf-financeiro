@@ -9,7 +9,7 @@
 
 		<properties>
 			<property name="hibernate.connection.url"
-				value="jdbc:mysql://localhost:3306/jsf_financeiro?createDatabaseIfNotExist=true;serverTimezone=UTC" />
+				value="jdbc:mysql://localhost:3306/jsf_financeiro?serverTimezone=UTC" />
 			<property name="hibernate.connection.username" value="root" />
 			<property name="hibernate.connection.password" value="1234" />
 			<property name="hibernate.connection.driver_class"
